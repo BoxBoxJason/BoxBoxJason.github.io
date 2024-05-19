@@ -1,0 +1,130 @@
+/* Header
+Sets the position of the header to fixed at the left of the screen
+Uses custom color set
+Adds min and max limitation for the width of the header
+*/
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 15vw;
+    min-width: 110px;
+    max-width: 240px;
+    height: 100vh;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Header profile
+Centers the image and adds a circle border around it
+Sets the minimum and maximum width and height of the image
+Centers the text elements
+*/
+header .profile {
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+header .profile img {
+    border: 1px solid #fff;
+    border-radius: 50%;
+    background-color: mediumpurple;
+    max-width: calc(100% - 4px);
+    max-height: auto;
+    min-width: 100px;
+    min-height: 100px;
+}
+
+/* Header redirects section
+Sets the background color of the list to a darker shade of the header
+Remove the default list style
+Centers the text elements (vertically) for each list item
+Sets icons size and change their colors on hover
+*/
+header .redirects {
+    background-color: #383838;
+    padding: 0;
+    margin: 0 5px;
+    list-style: none;
+}
+
+header .redirects li {
+    display: flex;
+    align-items: center;
+    transition: background-color 1s;
+    cursor: pointer;
+    vertical-align: middle;
+    height: fit-content;
+    border-top: 2px solid #252525;
+}
+
+header .redirects .closer {
+    border-bottom: 2px solid #252525;
+}
+
+header .redirects li:hover , #selected-redirect , header .social img:hover{
+    background-color: #555;
+}
+
+header .redirects a  {
+    text-align: left;
+    text-decoration: none;
+    color: #fff;
+}
+
+header .redirects span {
+    margin-left: 20px;
+}
+
+header .redirects img {
+    height: 30px;
+    width: 30px;
+    margin: 0 0 0 15px;
+    padding: 3px 5px 3px 0;
+}
+
+header .redirects li:hover img , #selected-redirect img {
+    filter: invert(30%) sepia(60%) saturate(1500%) hue-rotate(240deg);
+}
+
+/* Header social section
+Sets the position of the social section to fixed at the bottom of the screen
+Uses custom color set
+Adds min and max limitation for the width of the social section
+Centers the child elements
+Sets images size and adds a border around them
+*/
+header .social {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 15vw;
+    min-width: 110px;
+    max-width: 240px;
+    height: fit-content;
+    background-color: #222;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header .social .social-links {
+    width: fit-content;
+    margin: 3px auto 0;
+}
+
+header .social img {
+    border: 1px solid #fff;
+    border-bottom-right-radius: 25%;
+    border-top-left-radius: 25%;
+    height: 20px;
+    width: 20px;
+    margin: auto 3px;
+    padding: 3px;
+}
+
+header .social span {
+    font-size: 10pt;
+}
