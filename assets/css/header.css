@@ -52,7 +52,7 @@ header .redirects {
 header .redirects li {
     display: flex;
     align-items: center;
-    transition: background-color 1s;
+    transition: background-color 0.8s;
     cursor: pointer;
     vertical-align: middle;
     height: fit-content;
@@ -82,6 +82,7 @@ header .redirects img {
     width: 30px;
     margin: 0 0 0 15px;
     padding: 3px 5px 3px 0;
+    transition: filter 0.4s;
 }
 
 header .redirects li:hover img , #selected-redirect img {

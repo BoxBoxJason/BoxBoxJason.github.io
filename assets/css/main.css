@@ -4,5 +4,4 @@ It adjusts for the fixed nav
 */
 main {
     margin-left: calc(min(max(15vw, 110px), 240px));
-    padding: 20px;
 }

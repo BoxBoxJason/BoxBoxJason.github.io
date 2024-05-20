@@ -14,13 +14,17 @@ footer {
     align-items: center;
 }
 
+footer .social-links {
+    display: flex;
+    flex-direction: row;
+}
+
 footer .social-links img {
     border: 1px solid #fff;
     border-bottom-right-radius: 25%;
     border-top-left-radius: 25%;
     height: 20px;
     width: 20px;
-    margin: auto 3px;
     padding: 3px;
 }
 
@@ -31,4 +35,11 @@ footer .social-links img:hover{
 footer span {
     text-align: center;
     font-size: 10pt;
+}
+
+footer .social-links a {
+    display: block;
+    margin: 0 3px;
+    width: fit-content;
+    height: fit-content;
 }
