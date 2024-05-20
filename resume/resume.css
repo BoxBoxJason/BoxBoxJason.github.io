@@ -1,0 +1,127 @@
+.language-picker {
+    width: fit-content;
+    margin: 10px auto;
+    padding: 0;
+    height: fit-content;
+}
+
+.language-picker-option {
+    width: 70px;
+    height: 35px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 2px groove #000;
+    filter: grayscale(55%);
+    transition: filter 0.7s;
+}
+
+#french-resume-button {
+    background: linear-gradient(90deg,#0055a4 0,#0055a4 33%,#fff 0,#fff 66%,#ef4135 0);
+}
+
+#english-resume-button {
+    background-image: url(../assets/images/uk-flag.webp);
+    background-size: cover;
+}
+
+#spanish-resume-button {
+    background-image: url(../assets/images/spain-flag.webp);
+    background-size: contain;
+}
+
+.selected-language , .language-picker-option:hover {
+    filter: grayscale(0) saturate(5);
+}
+
+.resume {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1100px;
+    min-width: 600px;
+    border: 2px solid #000;
+    border-radius: 30px;
+    padding: 10px 6px;
+    background-color: #fff;
+    display: none;
+}
+
+.selected-resume {
+    display: block;
+}
+
+.resume-header {
+    margin: 0 0 30px 40px;
+}
+
+.resume-section {
+    margin: 0 0 15px 20px;
+}
+
+.resume-sub-section {
+    margin: 5px 0 10px 10px;
+}
+
+.inline-date {
+    font-weight: normal;
+    font-style: italic;
+    font-size: 13pt;
+}
+
+.resume h2, .resume h3, .resume h4, .resume h5, .resume h6, .resume p {
+    margin: 0;
+    padding: 0;
+}
+
+.resume ul {
+    padding: 0;
+    margin: 5px 0 0;
+}
+.resume h1 {
+    text-align: center;
+    font-size: 35pt;
+}
+
+.resume h2 {
+    font-size: 35pt;
+
+}
+
+.resume h3 {
+    font-size: 24pt;
+}
+
+.resume h4 {
+    font-size: 18pt;
+}
+
+.resume p , .resume li{
+    font-size: 13pt;
+    margin-left: 25px;
+}
+
+#download-resume-button {
+    display: block;
+    width: fit-content;
+    margin: 10px auto 0;
+    transition: background-color 0.5s;
+    border-radius: 8px;
+    border: 2px groove #000;
+    padding: 0;
+    transition: background-color 0.8s;
+}
+
+#download-resume-button img {
+    display: block;
+    width: 50px;
+    height: 50px;
+    transition: filter 0.4s;
+}
+
+#download-resume-button:hover {
+    background-color: #aaa;
+}
+
+#download-resume-button:hover img {
+    filter: invert(30%) sepia(60%) saturate(1500%) hue-rotate(240deg);
+}
