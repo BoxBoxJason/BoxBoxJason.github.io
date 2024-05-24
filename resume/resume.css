@@ -68,6 +68,13 @@
     font-size: 13pt;
 }
 
+.resume .separator {
+    height: 2px;
+    width: 80%;
+    clip-path: polygon(0 0,0 100%,80% 100%,100% 0);
+    background-color: mediumpurple;
+}
+
 .resume h2, .resume h3, .resume h4, .resume h5, .resume h6, .resume p {
     margin: 0;
     padding: 0;

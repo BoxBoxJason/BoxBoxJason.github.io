@@ -3,5 +3,34 @@ Sets the margin of the main content to the actual width of the nav
 It adjusts for the fixed nav
 */
 main {
-    margin-left: calc(min(max(15vw, 110px), 240px));
+    margin-left: calc(min(max(15vw, 170px), 240px));
+}
+
+main h1 {
+    font-size: 35pt;
+    font-weight: 300;
+    text-transform: capitalize;
+    margin: 8vh 0 7px calc(min(max(15vw, 170px), 240px));
+    padding: 0;
+}
+
+main .title-separator {
+    height: 2px;
+    clip-path: polygon(0 0, 0 100%, 80% 100%, 100% 0);
+    background-color: mediumpurple;
+    margin: 0 calc(min(max(15vw, 170px), 240px)) 5vh;
+}
+
+@media (max-width: 600px)  {
+    main {
+        margin: 0;
+    }
+
+    main h1 {
+        margin: 5vh 0 7px 3vw;
+    }
+
+    main .title-separator {
+        margin: 0 3vw 5vh;
+    }
 }

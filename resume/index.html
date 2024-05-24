@@ -29,6 +29,7 @@
   <link rel="stylesheet" href="./resume.css">
 </head>
 <body>
+  <button id="menu-button"><img src="../assets/images/triple-bar.webp" alt="Show menu icon" id="menu-image"></button>
   <header>
     <nav>
       <div class="profile">
@@ -38,37 +39,40 @@
       </div>
 
       <ul class="redirects">
-        <a href="../" title="Navigate to Home page">
-          <li>
+        <li>
+          <a href="../" title="Navigate to Home page">
             <img src="../assets/images/home.webp" alt="home logo">
             <span>Home</span>
-          </li>
-        </a>
-        <a href="../projects" title="Navigate to Projects page">
-          <li>
+          </a>
+        </li>
+
+        <li>
+          <a href="../projects" title="Navigate to Projects page">
             <img src="../assets/images/projects.webp" alt="projects logo">
             <span>Projects</span>
-          </li>
-        </a>
-        <a href="../resume" title="Navigate to Resume page">
-          <li id="selected-redirect">
+          </a>
+        </li>
+
+        <li id="selected-redirect">
+          <a href="../resume" title="Navigate to Resume page">
             <img src="../assets/images/resume.webp" alt="resume logo">
             <span>Resume</span>
-          </li>
-        </a>
-        <a href="../contact" title="Navigate to Contact page">
-          <li>
+          </a>
+        </li>
+
+        <li>
+          <a href="../contact" title="Navigate to Contact page">
             <img src="../assets/images/contact.webp" alt="contact logo">
             <span>Contact</span>
-          </li>
-        </a>
-        <a href="../about" title="Navigate to About page">
-          <li class="closer">
+          </a>
+        </li>
+        <li>
+          <a href="../about" title="Navigate to About page">
             <img src="../assets/images/about.webp" alt="about logo">
             <span>About</span>
-          </li>
-        </a>
-      </ul>
+          </a>
+        </li>
+    </ul>
 
       <div class="social">
         <div class="social-links">
@@ -81,6 +85,8 @@
   </header>
 
   <main>
+    <h1>Resume</h1>
+    <div class="title-separator"></div>
     <div class="language-picker">
       <button id="english-resume-button" class="language-picker-option selected-language" title="Switch to English language">English</button>
       <button id="french-resume-button" class="language-picker-option" title="Switch to French language">French</button>
@@ -89,17 +95,19 @@
 
     <section class="resume selected-resume" id="english-resume">
       <div class="resume-header">
-        <h2>Loïck Goupil-Hallay</h2>
+        <h2>BoxBoxJason</h2>
         <span>DevOps Engineer</span>
       </div>
 
         <section class="resume-section">
           <h3>Profile</h3>
+          <div class="separator"></div>
           <p>DevOps Engineer with 3 years of experience in the field. I have a strong background in software development and IT operations. I am passionate about automation, cloud computing, and infrastructure as code. I am looking for a challenging position in a dynamic environment where I can leverage my skills and experience to drive innovation and continuous improvement.</p>
         </section>
 
         <section class="resume-section">
           <h3>Skills</h3>
+          <div class="separator"></div>
           <ul>
             <li>Web Development: Golang <span class="inline-date">(1 year)</span>, HTML <span class="inline-date">(3 years)</span>, CSS <span class="inline-date">(3 years)</span>, JavaScript <span class="inline-date">(3 years)</span>, Node.js <span class="inline-date">(3 years)</span></li>
             <li>Programming Languages: Python <span class="inline-date">(7+ years)</span>, Qt <span class="inline-date">(2 years)</span>, Java <span class="inline-date">(1 year)</span></li>
@@ -113,6 +121,7 @@
 
         <section class="resume-section">
           <h3>Experience</h3>
+          <div class="separator"></div>
           <section class="resume-sub-section">
             <h4>Apprentice DevOps Engineer - Naval Group (France) <time class="inline-date">2022 -2025 (3 years)</time></h4>
             <ul>
@@ -135,6 +144,7 @@
 
         <section class="resume-section">
           <h3>Education</h3>
+          <div class="separator"></div>
           <section class="resume-sub-section">
             <h4>Engineer's Degree in Computer Science - Centrale Marseille (France) <time class="inline-date">2022 - 2025 (3 years)</time></h4>
             <ul>
@@ -162,6 +172,7 @@
 
         <section class="resume-section">
           <h3>Projects</h3>
+          <div class="separator"></div>
           <section class="resume-sub-section">
             <h4>GymGG - Workout Tracker Mobile Application <time class="inline-date">2025</time></h4>
             <ul>
@@ -202,6 +213,7 @@
 
         <section class="resume-section">
           <h3>Languages</h3>
+          <div class="separator"></div>
           <ul>
             <li>English: Fluent (TOIEC C1 certification)</li>
             <li>French: Native</li>
@@ -213,15 +225,17 @@
 
     <section class="resume" id="french-resume">
       <div class="resume-header">
-        <h2>Loïck Goupil-Hallay</h2>
+        <h2>BoxBoxJason</h2>
         <span>Ingénieur DevOps</span>
       </div>
       <section class="resume-section">
         <h3>Profil</h3>
+        <div class="separator"></div>
         <p>Ingénieur DevOps avec 3 ans d'expérience dans le domaine. J'ai une solide formation en développement logiciel et en informatique. Je suis passionné par l'automatisation, le cloud et le développement de solutions visuelles & interactives . Je recherche un poste stimulant dans un environnement dynamique où je peux utiliser mes compétences et mon expérience pour favoriser l'innovation et l'amélioration continue.</p>
       </section>
       <section class="resume-section">
         <h3>Compétences</h3>
+        <div class="separator"></div>
         <ul>
           <li>Développement Web : Golang <span class="inline-date">(1 an)</span>, HTML <span class="inline-date">(3 ans)</span>, CSS <span class="inline-date">(3 ans)</span>, JavaScript <span class="inline-date">(3 ans)</span>, Node.js <span class="inline-date">(3 ans)</span></li>
           <li>Langages de Programmation : Python <span class="inline-date">(7+ ans)</span>, Qt <span class="inline-date">(2 ans)</span>, Java <span class="inline-date">(1 an)</span></li>
@@ -234,6 +248,7 @@
       </section>
       <section class="resume-section">
         <h3>Expérience</h3>
+        <div class="separator"></div>
         <section class="resume-sub-section">
           <h4>Apprenti Ingénieur DevOps - Naval Group (France) <time class="inline-date">2022 -2025 (3 ans)</time></h4>
           <ul>
@@ -257,6 +272,7 @@
 
       <section class="resume-section">
         <h3>Éducation</h3>
+        <div class="separator"></div>
         <section class="resume-sub-section">
           <h4>Diplôme d'Ingénieur en Informatique - Centrale Marseille (France) <time class="inline-date">2022 - 2025 (3 ans)</time></h4>
           <ul>
@@ -283,6 +299,7 @@
       </section>
       <section class="resume-section">
         <h3>Projets</h3>
+        <div class="separator"></div>
         <section class="resume-sub-section">
           <h4>GymGG - Application Mobile de Suivi d'Entraînement <time class="inline-date">2025</time></h4>
           <ul>
@@ -321,6 +338,7 @@
       </section>
       <section class="resume-section">
         <h3>Langues</h3>
+        <div class="separator"></div>
         <ul>
           <li>Anglais : Courant (certification TOIEC C1)</li>
           <li>Français : Natif</li>
@@ -332,15 +350,17 @@
 
     <section class="resume" id="spanish-resume">
       <div class="resume-header">
-        <h2>Loïck Goupil-Hallay</h2>
+        <h2>BoxBoxJason</h2>
         <span>Ingeniero DevOps</span>
       </div>
       <section class="resume-section">
         <h3>Perfil</h3>
+        <div class="separator"></div>
         <p>Ingeniero DevOps con 3 años de experiencia en el campo. Tengo una sólida formación en desarrollo de software y operaciones de TI. Me apasiona la automatización, la computación en la nube y la infraestructura como código. Busco una posición desafiante en un entorno dinámico donde pueda aprovechar mis habilidades y experiencia para impulsar la innovación y la mejora continua.</p>
       </section>
       <section class="resume-section">
         <h3>Habilidades</h3>
+        <div class="separator"></div>
         <ul>
           <li>Desarrollo Web: Golang <span class="inline-date">(1 año)</span>, HTML <span class="inline-date">(3 años)</span>, CSS <span class="inline-date">(3 años)</span>, JavaScript <span class="inline-date">(3 años)</span>, Node.js <span class="inline-date">(3 años)</span></li>
           <li>Lenguajes de Programación: Python <span class="inline-date">(7+ años)</span>, Qt <span class="inline-date">(2 años)</span>, Java <span class="inline-date">(1 año)</span></li>
@@ -353,6 +373,7 @@
       </section>
       <section class="resume-section">
         <h3>Experiencia</h3>
+        <div class="separator"></div>
         <section class="resume-sub-section">
           <h4>Ingeniero DevOps Aprendiz - Naval Group (Francia) <time class="inline-date">2022 -2025 (3 años)</time></h4>
           <ul>
@@ -373,6 +394,7 @@
       </section>
       <section class="resume-section">
         <h3>Educación</h3>
+        <div class="separator"></div>
         <section class="resume-sub-section">
           <h4>Grado de Ingeniero en Informática - Centrale Marseille (Francia) <time class="inline-date">2022 - 2025 (3 años)</time></h4>
           <ul>
@@ -398,6 +420,7 @@
       </section>
       <section class="resume-section">
         <h3>Proyectos</h3>
+        <div class="separator"></div>
         <section class="resume-sub-section">
           <h4>GymGG - Aplicación Móvil de Seguimiento de Entrenamientos <time class="inline-date">2025</time></h4>
           <ul>
@@ -436,6 +459,7 @@
       </section>
       <section class="resume-section">
         <h3>Idiomas</h3>
+        <div class="separator"></div>
         <ul>
           <li>Inglés: Fluido (certificación TOIEC C1)</li>
           <li>Francés: Nativo</li>
@@ -456,4 +480,7 @@
     </div>
     <span>© BoxBoxJason - 2024</span>
   </footer>
+
+  <script src="../assets/js/header.js"></script>
+</body>
 </html>
