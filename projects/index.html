@@ -5,20 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="BoxBoxJason">
-    <meta name="keywords" content="BoxBoxJason, DevOps Engineer, Software Development, IT Operations, Automation, UI, Solutions">
-    <meta name="description" content="BoxBoxJason  an experienced DevOps Engineer with a strong background in software development and IT operations, specializing in automation & UI based solutions">
+    <meta name="keywords" content="BoxBoxJason, Software Development, IT Operations, Automation, UI, Projects">
+    <meta name="description" content="Find all the personal projects BoxBoxJason has worked on.">
     <meta name="robots" content="index, follow">
     <meta http-equiv="Content-Language" content="en">
-    <link rel="canonical" href="https://boxboxjason.github.io/resume">
+    <link rel="canonical" href="https://boxboxjason.github.io/projects">
     <link rel="apple-touch-icon" href="https://boxboxjason.github.io/assets/images/favicon.webp">
     <meta property="og:title" content="BoxBoxJason - DevOps Engineer">
-    <meta property="og:description" content="Experienced DevOps Engineer specializing in automation, cloud computing & UI based solutions">
+    <meta property="og:description" content="Find all the personal projects BoxBoxJason has worked on.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://boxboxjason.github.io/">
     <meta property="og:image" content="https://boxboxjason.github.io/assets/images/profile.webp">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="BoxBoxJason - DevOps Engineer">
-    <meta name="twitter:description" content="Experienced DevOps Engineer specializing in automation, cloud computing & UI based solutions.">
+    <meta name="twitter:description" content="Find all the personal projects BoxBoxJason has worked on.">
     <meta name="twitter:image" content="https://boxboxjason.github.io/assets/images/profile.webp">
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="icon" href="../assets/images/favicon.webp">
@@ -26,9 +26,10 @@
     <link rel="stylesheet" href="../assets/css/header.css">
     <link rel="stylesheet" href="../assets/css/main.css">
     <link rel="stylesheet" href="../assets/css/footer.css">
-    <link rel="stylesheet" href="./resume.css">
+    <link rel="stylesheet" href="./projects.css">
   </head>
   <body>
+    <button id="menu-button"><img src="../assets/images/triple-bar.webp" alt="Show menu icon" id="menu-image"></button>
     <header>
       <nav>
         <div class="profile">
@@ -38,37 +39,40 @@
         </div>
 
         <ul class="redirects">
-          <a href="../" title="Navigate to Home page">
-            <li>
+          <li>
+            <a href="../" title="Navigate to Home page">
               <img src="../assets/images/home.webp" alt="home logo">
               <span>Home</span>
-            </li>
-          </a>
-          <a href="../projects" title="Navigate to Projects page">
-            <li id="selected-redirect">
+            </a>
+          </li>
+
+          <li id="selected-redirect">
+            <a href="../projects" title="Navigate to Projects page">
               <img src="../assets/images/projects.webp" alt="projects logo">
               <span>Projects</span>
-            </li>
-          </a>
-          <a href="../resume" title="Navigate to Resume page">
-            <li>
+            </a>
+          </li>
+
+          <li>
+            <a href="../resume" title="Navigate to Resume page">
               <img src="../assets/images/resume.webp" alt="resume logo">
               <span>Resume</span>
-            </li>
-          </a>
-          <a href="../contact" title="Navigate to Contact page">
-            <li>
+            </a>
+          </li>
+
+          <li>
+            <a href="../contact" title="Navigate to Contact page">
               <img src="../assets/images/contact.webp" alt="contact logo">
               <span>Contact</span>
-            </li>
-          </a>
-          <a href="../about" title="Navigate to About page">
-            <li class="closer">
+            </a>
+          </li>
+          <li>
+            <a href="../about" title="Navigate to About page">
               <img src="../assets/images/about.webp" alt="about logo">
               <span>About</span>
-            </li>
-          </a>
-        </ul>
+            </a>
+          </li>
+      </ul>
 
         <div class="social">
           <div class="social-links">
@@ -80,15 +84,433 @@
       </nav>
     </header>
 
-  <main>
+    <main>
+      <h1>Projects</h1>
+      <div class="title-separator"></div>
+      <nav class="filter-projects">
+        <div class="filter-selector">
+          <label for="language-selector">Filter by type:</label>
+          <select name="language-selector" id="language-selector">
+            <option value="all">All languages</option>
+            <option value="python">Python</option>
+            <option value="javascript">JavaScript</option>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="golang">Go</option>
+            <option value="nodejs">Node.js</option>
+            <option value="vuejs">Vue.js</option>
+            <option value="qt">Qt</option>
+            <option value="cpp">C++</option>
+            <option value="java">Java</option>
+          </select>
+        </div>
+        <div select="filter-selector">
+          <label for="finished-projects-selector">Finished</label>
+          <input name="finished-projects-selector" type="checkbox" id="finished-projects-selector">
+        </div>
+        <div class="filter-selector">
+          <span>Order:</span>
+            <input type="radio" class="order-selector-button" name="order-selector" id="descending-order-button" value="desc" checked>
+            <label for="descending-order-button"><img src="../assets/images/descending.webp" alt="Descending order"></label>
+            <input type="radio" class="order-selector-button" name="order-selector" id="ascending-order-button" value="asc">
+            <label for="ascending-order-button"><img src="../assets/images/ascending.webp" alt="Ascending order"></label>
+          </div>
+      </nav>
 
-  </main>
+      <section id="projects">
 
-  <footer>
-    <div class="social-links">
-      <a href="https://github.com/BoxBoxJason" target="_blank" title="Go to GitHub"><img src="../assets/images/github.webp" alt="github logo"></a>
-      <a href="https://www.linkedin.com/in/lo%C3%AFck-goupil-hallay-710619245/" target="_blank" title="Go to LinkedIn"><img src="../assets/images/linkedin.webp" alt="linkedin logo"></a>
-    </div>
-    <span>© BoxBoxJason - 2024</span>
-  </footer>
+        <details class="project qt-project cpp-project" data-date="2024/12/01">
+          <summary>
+            <div class="project-header">
+              <div class="language-indicator">
+                <div class="language-indicator-child">
+                  <img src="../assets/images/qt.webp" alt="Qt logo">
+                  <span>Qt</span>
+                </div>
+                <div class="language-indicator-child">
+                  <img src="../assets/images/cpp.webp" alt="C++ logo">
+                  <span>C++</span>
+                </div>
+              </div>
+              <div class="time-indicator">
+                <img src="../assets/images/calendar.webp" alt="Calendar icon">
+                <time>August - December 2024</time>
+              </div>
+            </div>
+            <h2>Gym.GG</h2>
+            <p>Mobile application to help you track your gym sessions</p>
+          </summary>
+          <div class="project-main">
+
+          </div>
+        </details>
+
+        <details class="project golang-project vuejs-project" data-date="2024/06/01">
+          <summary>
+            <div class="project-header">
+              <div class="language-indicator">
+                <div class="language-indicator-child">
+                  <img src="../assets/images/golang.webp" alt="Go logo">
+                  <span>Go</span>
+                </div>
+                <div class="language-indicator-child">
+                  <img src="../assets/images/vue.webp" alt="Vue.js logo">
+                  <span>Vue.js</span>
+                </div>
+              </div>
+              <div class="time-indicator">
+                <img src="../assets/images/calendar.webp" alt="Calendar icon">
+                <time>April - June 2024</time>
+              </div>
+            </div>
+            <h2>BeatBoxBox</h2>
+            <p>Music Streaming platform</p>
+          </summary>
+          <div class="project-main">
+
+          </div>
+        </details>
+
+        <details class="project qt-project cpp-project" data-date="2024/08/01">
+          <summary>
+            <div class="project-header">
+              <div class="language-indicator">
+                <div class="language-indicator-child">
+                  <img src="../assets/images/qt.webp" alt="Qt logo">
+                  <span>Qt</span>
+                </div>
+                <div class="language-indicator-child">
+                  <img src="../assets/images/cpp.webp" alt="C++ logo">
+                  <span>C++</span>
+                </div>
+              </div>
+              <div class="time-indicator">
+                <img src="../assets/images/calendar.webp" alt="Calendar icon">
+                <time>April - August 2024</time>
+              </div>
+            </div>
+            <h2>NoteNote</h2>
+            <p>Desktop application to help teachers monitor their students' progress</p>
+          </summary>
+          <div class="project-main">
+
+          </div>
+        </details>
+
+        <details class="project python-project finished-project" data-date="2024/02/01">
+          <summary>
+            <div class="project-header">
+              <div class="language-indicator">
+                <div class="language-indicator-child">
+                  <img src="../assets/images/python.webp" alt="Python logo">
+                  <span>Python</span>
+                </div>
+              </div>
+              <div class="time-indicator">
+                <img src="../assets/images/calendar.webp" alt="Calendar icon">
+                <time>October 2023 - February 2024</time>
+              </div>
+            </div>
+            <h2>GamBible</h2>
+            <p>Python desktop application to help sports betters make better decisions</p>
+          </summary>
+          <div class="project-main">
+          </div>
+        </details>
+
+        <details class="project nodejs-project html-project css-project javascript-project" data-date="2024/01/01">
+          <summary>
+            <div class="project-header">
+              <div class="language-indicator">
+                <div class="language-indicator-child">
+                  <img src="../assets/images/node.webp" alt="Node.js logo">
+                  <span>Node.js</span>
+                </div>
+                <div class="language-indicator-child">
+                  <img src="../assets/images/html.webp" alt="HTML logo">
+                  <span>HTML</span>
+                </div>
+                <div class="language-indicator-child">
+                  <img src="../assets/images/css.webp" alt="CSS logo">
+                  <span>CSS</span>
+                </div>
+                <div class="language-indicator-child">
+                  <img src="../assets/images/javascript.webp" alt="JavaScript logo">
+                  <span>JavaScript</span>
+                </div>
+              </div>
+              <div class="time-indicator">
+                <img src="../assets/images/calendar.webp" alt="Calendar icon">
+                <time>January 2024</time>
+              </div>
+            </div>
+            <h2>GameBox</h2>
+            <p>Interactive online games platform with user</p>
+          </summary>
+          <div class="project-main">
+
+          </div>
+        </details>
+
+        <details class="project python-project finished-project" data-date="2023/12/01">
+          <summary>
+            <div class="project-header">
+              <div class="language-indicator">
+                <div class="language-indicator-child">
+                  <img src="../assets/images/python.webp" alt="Python logo">
+                  <span>Python</span>
+                </div>
+              </div>
+              <div class="time-indicator">
+                <img src="../assets/images/calendar.webp" alt="Calendar icon">
+                <time>December 2024</time>
+              </div>
+            </div>
+            <h2>Reprocesser</h2>
+            <span>Works in pair with GamBible</span>
+            <p>Python desktop application to help sports betters mine existing datasets and convert them to suit GamBible</p>
+          </summary>
+          <div class="project-main">
+
+          </div>
+        </details>
+
+        <details class="project python-project finished-project" data-date="2023/12/01">
+          <summary>
+            <div class="project-header">
+              <div class="language-indicator">
+                <div class="language-indicator-child">
+                  <img src="../assets/images/python.webp" alt="Python logo">
+                  <span>Python</span>
+                </div>
+              </div>
+              <div class="time-indicator">
+                <img src="../assets/images/calendar.webp" alt="Calendar icon">
+                <time>December 2024</time>
+              </div>
+            </div>
+            <h2>BroCollect</h2>
+            <span>Works in pair with GamBible</span>
+            <p>Python desktop application to help sports betters build their own database of sports events results</p>
+          </summary>
+          <div class="project-main">
+
+          </div>
+        </details>
+
+        <details class="project python-project finished-project" data-date="2023/11/01">
+          <summary>
+            <div class="project-header">
+              <div class="language-indicator">
+                <div class="language-indicator-child">
+                  <img src="../assets/images/python.webp" alt="Python logo">
+                  <span>Python</span>
+                </div>
+              </div>
+              <div class="time-indicator">
+                <img src="../assets/images/calendar.webp" alt="Calendar icon">
+                <time>November 2023</time>
+              </div>
+            </div>
+            <h2>Playground</h2>
+            <p>Django website for children to play & interact with pets</p>
+          </summary>
+          <div class="project-main">
+
+          </div>
+        </details>
+
+        <details class="project java-project finished-project" data-date="2023/07/01">
+          <summary>
+            <div class="project-header">
+              <div class="language-indicator">
+                <div class="language-indicator-child">
+                  <img src="../assets/images/java.webp" alt="Java logo">
+                  <span>Java</span>
+                </div>
+              </div>
+              <div class="time-indicator">
+                <img src="../assets/images/calendar.webp" alt="Calendar icon">
+                <time>July 2023</time>
+              </div>
+            </div>
+            <h2>Departer</h2>
+            <p>Tool to help you manage your departures</p>
+          </summary>
+          <div class="project-main">
+          </div>
+        </details>
+
+
+        <details class="project java-project finished-project" data-date="2023/06/01">
+          <summary>
+            <div class="project-header">
+              <div class="language-indicator">
+                <div class="language-indicator-child">
+                  <img src="../assets/images/java.webp" alt="Java logo">
+                  <span>Java</span>
+                </div>
+              </div>
+              <div class="time-indicator">
+                <img src="../assets/images/calendar.webp" alt="Calendar icon">
+                <time>June 2023</time>
+              </div>
+            </div>
+            <h2>Chess</h2>
+            <p>Java implementation of the famous Chess game</p>
+          </summary>
+          <div class="project-main">
+
+          </div>
+        </details>
+
+
+        <details class="project java-project finished-project" data-date="2023/03/2023">
+          <summary>
+            <div class="project-header">
+              <div class="language-indicator">
+                <div class="language-indicator-child">
+                  <img src="../assets/images/java.webp" alt="Java logo">
+                  <span>Java</span>
+                </div>
+              </div>
+              <div class="time-indicator">
+                <img src="../assets/images/calendar.webp" alt="Calendar icon">
+                <time>March 2023</time>
+              </div>
+            </div>
+            <h2>2048</h2>
+            <p>Java implementation of the famous 2048 game</p>
+          </summary>
+          <div class="project-main">
+          </div>
+        </details>
+
+        <details class="project python-project finished-project" data-date="2023/02/15">
+          <summary>
+            <div class="project-header">
+              <div class="language-indicator">
+                <div class="language-indicator-child">
+                  <img src="../assets/images/python.webp" alt="Python logo">
+                  <span>Python</span>
+                </div>
+              </div>
+              <div class="time-indicator">
+                <img src="../assets/images/calendar.webp" alt="Calendar icon">
+                <time>February 2023</time>
+              </div>
+            </div>
+            <h2>Whatsapp Messages Statistics</h2>
+            <p>Python application to analyze your Whatsapp messages and give you graphs and statistics</p>
+          </summary>
+          <div class="project-main">
+          </div>
+        </details>
+
+        <details class="project python-project finished-project" data-date="2023/02/01">
+          <summary>
+            <div class="project-header">
+              <div class="language-indicator">
+                <div class="language-indicator-child">
+                  <img src="../assets/images/python.webp" alt="Python logo">
+                  <span>Python</span>
+                </div>
+              </div>
+              <div class="time-indicator">
+                <img src="../assets/images/calendar.webp" alt="Calendar icon">
+                <time>February 2023</time>
+              </div>
+            </div>
+            <h2>Instagram Messages Statistics</h2>
+            <p>Python application to analyze your Instagram messages and give you graphs and statistics</p>
+          </summary>
+          <div class="project-main">
+
+          </div>
+        </details>
+
+        <details class="project python-project finished-project" data-date="2022/08/01">
+          <summary>
+            <div class="project-header">
+              <div class="language-indicator">
+                <div class="language-indicator-child">
+                  <img src="../assets/images/python.webp" alt="Python logo">
+                  <span>Python</span>
+                </div>
+              </div>
+              <div class="time-indicator">
+                <img src="../assets/images/calendar.webp" alt="Calendar icon">
+                <time>July-August 2022</time>
+              </div>
+            </div>
+            <h2>NoteNote</h2>
+            <p>Desktop application to help teachers monitor their students' progress</p>
+          </summary>
+          <div class="project-main">
+
+          </div>
+        </details>
+
+        <details class="project python-project finished-project" data-date="2021/05/01">
+          <summary>
+            <div class="project-header">
+              <div class="language-indicator">
+                <div class="language-indicator-child">
+                  <img src="../assets/images/python.webp" alt="Python logo">
+                  <span>Python</span>
+                </div>
+              </div>
+              <div class="time-indicator">
+                <img src="../assets/images/calendar.webp" alt="Calendar icon">
+                <time>January - May 2021</time>
+              </div>
+            </div>
+            <h2>Dijkstra's shortest path Visual</h2>
+            <p>Python application to visualize Dijkstra's shortest path algorithm</p>
+          </summary>
+          <div class="project-main">
+
+          </div>
+
+        </details>
+
+        <details class="project python-project finished-project" data-date="2020/03/01">
+          <summary>
+            <div class="project-header">
+              <div class="language-indicator">
+                <div class="language-indicator-child">
+                  <img src="../assets/images/python.webp" alt="Python logo">
+                  <span>Python</span>
+                </div>
+              </div>
+              <div class="time-indicator">
+                <img src="../assets/images/calendar.webp" alt="Calendar icon">
+                <time>March 2020</time>
+              </div>
+            </div>
+            <h2>Raffi Discord Bot</h2>
+            <p>A funny and interactive Discord bot to entertain your community</p>
+          </summary>
+          <div class="project-main">
+
+
+          </div>
+        </details>
+
+      </section>
+    </main>
+
+    <script src="./projects.js"></script>
+
+    <footer>
+      <div class="social-links">
+        <a href="https://github.com/BoxBoxJason" target="_blank" title="Go to GitHub"><img src="../assets/images/github.webp" alt="github logo"></a>
+        <a href="https://www.linkedin.com/in/lo%C3%AFck-goupil-hallay-710619245/" target="_blank" title="Go to LinkedIn"><img src="../assets/images/linkedin.webp" alt="linkedin logo"></a>
+      </div>
+      <span>© BoxBoxJason - 2024</span>
+    </footer>
+
+    <script src="../assets/js/header.js"></script>
+
+  </body>
 </html>

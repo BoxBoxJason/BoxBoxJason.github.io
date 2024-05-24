@@ -7,9 +7,6 @@ function setMenuButtonAction() {
     let header = document.querySelector('header');
     let main = document.querySelector('main');
     let footer = document.querySelector('footer');
-    console.log(header);
-    console.log(main);
-    console.log(footer);
     if (menu_button && header && main && footer && menu_image) {
         menu_button.addEventListener('click', function () {
             if (menu_visible) {

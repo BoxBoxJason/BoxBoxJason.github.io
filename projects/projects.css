@@ -1,0 +1,127 @@
+.filter-projects {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 540px;
+    margin: 0 0.5vw;
+    padding: 1vh 3vw;
+    background-color: #2f0c5c;
+    color: #fff;
+}
+
+.filter-selector {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.filter-selector img {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #000;
+    padding: 3px;
+}
+
+.order-selector-button {
+    opacity: 0;
+    width: 0;
+}
+
+.order-selector-button + label img {
+    background-color: #aaa;
+}
+
+.order-selector-button:checked + label img {
+    background-color: #999;
+}
+
+#projects {
+    margin: 0 0.5vw;
+    background-color: #f1f1f1;
+    padding: 1vh 0.5vw;
+    min-width: 540px;
+}
+
+.project {
+    margin-bottom: calc(max(3vh,30px));
+    background-color: #fff;
+    padding: 3px 3px 10px;
+}
+
+.project:last-child {
+    margin-bottom: 0;
+}
+
+.project summary {
+    cursor: pointer;
+    list-style: none;
+}
+
+.project h2 {
+    padding: 0;
+    margin: 0;
+}
+
+.project .project-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0 0 3px;
+    border-bottom: 1px solid #000;
+}
+
+.project .language-indicator {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.language-indicator-child {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.language-indicator-child img {
+    width: 20px;
+    height: 20px;
+    padding: 3px;
+}
+
+.project .time-indicator {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.project .time-indicator img {
+    width: 20px;
+    height: 20px;
+    padding: 3px;
+}
+
+@media (max-width: 600px) {
+    .filter-projects {
+        flex-direction: column;
+        align-items: center;
+        min-width: 0;
+        padding: 10px;
+        margin: 0;
+    }
+
+    .filter-selector {
+        margin-bottom: 1vh;
+    }
+
+    .order-selector-button {
+        display: none;
+    }
+
+    #projects {
+        min-width: 0;
+    }
+}
