@@ -113,18 +113,19 @@
 
 .project .project-main h3 {
     padding: 10px 0 0;
-    margin: 0 0 0 calc(min(20%,30px));
+    margin: 0 0 0 30px;
     font-weight: 300;
     border-bottom: 1px solid #000;
     width: fit-content;
 }
 
 .project .project-main p {
-    margin: 5px 0 0 calc(10px + min(20%,30px));
+    margin: 5px 0 0 40px;
 }
 
 .project .project-main ul {
-    margin: 7px 0 10px;
+    margin: 7px 0 10px 40px;
+    padding: 0;
     list-style-type: none;
 }
 
@@ -181,5 +182,13 @@
 
     #projects {
         min-width: 0;
+    }
+
+    .project .project-main h3 {
+        margin-left: 3px;
+    }
+
+    .project .project-main p, .project .project-main ul li, .project .project-main ul{
+        margin-left: 5px;
     }
 }

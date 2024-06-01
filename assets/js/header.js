@@ -1,6 +1,33 @@
 "use strict";
 var menu_visible = false;
 setMenuButtonAction();
+// Show the header if the size of the screen is greater than 600px
+window.addEventListener('resize', function () {
+    let header = document.querySelector('header');
+    let main = document.querySelector('main');
+    let footer = document.querySelector('footer');
+    let menu_button = document.getElementById('menu-button');
+    let menu_image = document.getElementById('menu-image');
+    if (header && main && footer && menu_button && menu_image) {
+        if (window.innerWidth > 600) {
+            header.style.display = 'block';
+            main.style.display = 'block';
+            footer.style.display = 'flex';
+            menu_image.src = '../assets/images/icons/triple-bar.webp';
+            menu_button.style.position = 'fixed';
+        }
+        else {
+            header.style.display = 'none';
+            main.style.display = 'block';
+            footer.style.display = 'flex';
+            menu_image.src = '../assets/images/icons/triple-bar.webp';
+            menu_button.style.position = 'fixed';
+        }
+    }
+    else {
+        console.error('Error, at least one of the components for the menu action was not found !');
+    }
+});
 function setMenuButtonAction() {
     let menu_button = document.getElementById('menu-button');
     let menu_image = document.getElementById('menu-image');
@@ -25,7 +52,8 @@ function setMenuButtonAction() {
             }
             menu_visible = !menu_visible;
         });
-    } else {
+    }
+    else {
         console.error('Error, at least one of the components for the menu action was not found !');
     }
 }

@@ -5,6 +5,12 @@ Sets the global font to 'Barlow' and the background color to #bbb
     font-family: 'Barlow', sans-serif;
 }
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 body {
     background-color: #bbb;
     margin: 0;

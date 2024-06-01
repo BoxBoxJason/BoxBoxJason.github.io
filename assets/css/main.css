@@ -24,6 +24,7 @@ main .title-separator {
 @media (max-width: 600px)  {
     main {
         margin: 0;
+        width: 100%;
     }
 
     main h1 {

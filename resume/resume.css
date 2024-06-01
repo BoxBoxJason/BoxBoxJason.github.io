@@ -89,7 +89,6 @@
 
 .resume h2 {
     font-size: 35pt;
-
 }
 
 .resume h3 {
@@ -129,4 +128,36 @@
 
 #download-resume-button:hover img {
     filter: invert(30%) sepia(60%) saturate(1500%) hue-rotate(240deg);
+}
+
+@media (max-width: 600px) {
+    .resume {
+        border-radius: 10px;
+        margin: 0;
+    }
+
+    .resume-header {
+        margin: 0 0 15px;
+    }
+
+    .resume h2 {
+        font-size: 30pt;
+    }
+
+    .resume h3 {
+        font-size: 20pt;
+    }
+
+    .resume h4 {
+        font-size: 15pt;
+    }
+
+    .resume p , .resume li{
+        font-size: 11pt;
+        margin-left: 10px;
+    }
+
+    .resume-section {
+        margin-left: 0;
+    }
 }
