@@ -14,13 +14,13 @@ function setMenuButtonAction() {
                 header.style.display = 'none';
                 main.style.display = 'block';
                 footer.style.display = 'flex';
-                menu_image.src = '../assets/images/triple-bar.webp';
+                menu_image.src = '../assets/images/icons/triple-bar.webp';
                 menu_button.style.position = 'fixed';
             } else {
                 header.style.display = 'block';
                 main.style.display = 'none';
                 footer.style.display = 'none';
-                menu_image.src = '../assets/images/x-close.webp';
+                menu_image.src = '../assets/images/icons/x-close.webp';
                 menu_button.style.position = 'absolute';
             }
             menu_visible = !menu_visible;
