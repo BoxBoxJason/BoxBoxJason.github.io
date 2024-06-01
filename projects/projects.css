@@ -74,8 +74,8 @@
 }
 
 .project .language-indicator {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
@@ -93,6 +93,7 @@
 }
 
 .project .time-indicator {
+    margin-left: 15px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -102,6 +103,63 @@
     width: 20px;
     height: 20px;
     padding: 3px;
+}
+
+.project .project-main {
+    background-color: rgba(238, 209, 240,0.5);
+    border-radius: 10px;
+    padding: 0 5px 5px;
+}
+
+.project .project-main h3 {
+    padding: 10px 0 0;
+    margin: 0 0 0 calc(min(20%,30px));
+    font-weight: 300;
+    border-bottom: 1px solid #000;
+    width: fit-content;
+}
+
+.project .project-main p {
+    margin: 5px 0 0 calc(10px + min(20%,30px));
+}
+
+.project .project-main ul {
+    margin: 7px 0 10px;
+    list-style-type: none;
+}
+
+.project .project-main ul li {
+    padding: 5px;
+    text-align: center;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.project .project-main .project-technologies li {
+    border: 8px inset rebeccapurple;
+    background-color: #9c63d6;
+}
+
+.project .project-main .project-achievements li {
+    border: 8px inset goldenrod;
+    background-color: gold;
+    padding: 8px;
+}
+
+.project .project-main .project-links li {
+    border: 8px inset royalblue;
+    background-color: #7490e3;
+}
+
+.project .project-technologies, .project .project-links, .project .project-achievements {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-auto-rows: minmax(30px, auto);
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 @media (max-width: 600px) {
